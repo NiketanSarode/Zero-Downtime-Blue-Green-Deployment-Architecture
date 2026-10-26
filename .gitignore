@@ -1,0 +1,52 @@
+# Environment and secret files
+
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+credentials/
+
+# Terraform state and local files (for future IaC)
+
+*.tfstate
+*.tfstate.*
+.terraform/
+terraform.tfvars
+*.tfplan
+
+# Ansible vault files
+
+.vault_pass
+
+# Logs
+
+*.log
+logs/
+
+# OS-generated files
+
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor and IDE files
+
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary and backup files
+
+*.tmp
+*.bak
+*~
+
+# Python cache (if future scripts use Python)
+
+**pycache**/
+*.py[cod]
+venv/
+.venv/
